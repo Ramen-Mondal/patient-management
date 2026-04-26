@@ -24,6 +24,15 @@ public class PatientRequestDTO {
         this.email = email;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+
     public String getDateOfBirth() {
         return dateOfBirth;
     }
@@ -47,6 +56,9 @@ public class PatientRequestDTO {
     @NotBlank(message = "Email is required")
     @Email(message = "Email should be valid")
     private String email;
+
+    @NotBlank(message = "Address is required")
+    private String address;
 
     @NotBlank(message = "Address is required")
     private String dateOfBirth;
