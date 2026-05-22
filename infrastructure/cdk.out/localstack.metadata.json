@@ -3,12 +3,364 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "Kernel._Kernel_create (/tmp/jsii-java-runtime5921151973823429519/lib/program.js:1:61273)",
-        "Kernel.create (/tmp/jsii-java-runtime5921151973823429519/lib/program.js:1:52004)",
-        "KernelHost.processRequest (/tmp/jsii-java-runtime5921151973823429519/lib/program.js:1:212888)",
-        "KernelHost.run (/tmp/jsii-java-runtime5921151973823429519/lib/program.js:1:211943)",
-        "Immediate._onImmediate (/tmp/jsii-java-runtime5921151973823429519/lib/program.js:1:211987)",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)",
+        "Immediate._onImmediate (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211987)",
         "...node internals..."
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPC1A115009"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new Vpc2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)",
+        "Immediate._onImmediate (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211987)",
+        "...node internals..."
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/IGW": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCIGW124381B6"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new Vpc2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)",
+        "Immediate._onImmediate (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211987)",
+        "...node internals..."
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/VPCGW": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCVPCGW9E43EDF7"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new Vpc2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)",
+        "Immediate._onImmediate (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211987)",
+        "...node internals..."
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PublicSubnet1/Subnet": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPublicSubnet1SubnetFE84BEFE"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
+        "Array.forEach (:)",
+        "...aws-cdk-lib..."
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PublicSubnet1/RouteTable": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPublicSubnet1RouteTable4FB2D061"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
+        "Array.forEach (:)",
+        "...aws-cdk-lib..."
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PublicSubnet1/RouteTableAssociation": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPublicSubnet1RouteTableAssociation2EE560DF"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
+        "Array.forEach (:)",
+        "...aws-cdk-lib..."
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PublicSubnet1/DefaultRoute": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPublicSubnet1DefaultRouteFB7F5A02"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:197 in aws-cdk-lib...",
+        "Array.forEach (:)",
+        "...new Vpc2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)"
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PublicSubnet1/EIP": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPublicSubnet1EIP40850451"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new Vpc2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)"
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PublicSubnet1/NATGateway": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPublicSubnet1NATGateway481378DF"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new Vpc2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)"
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PublicSubnet2/Subnet": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPublicSubnet2Subnet065C6CA5"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
+        "Array.forEach (:)",
+        "...aws-cdk-lib..."
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PublicSubnet2/RouteTable": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPublicSubnet2RouteTableFD39FF98"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
+        "Array.forEach (:)",
+        "...aws-cdk-lib..."
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PublicSubnet2/RouteTableAssociation": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPublicSubnet2RouteTableAssociationE5700D42"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
+        "Array.forEach (:)",
+        "...aws-cdk-lib..."
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PublicSubnet2/DefaultRoute": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPublicSubnet2DefaultRouteCE7DA4EC"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:197 in aws-cdk-lib...",
+        "Array.forEach (:)",
+        "...new Vpc2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)"
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PublicSubnet2/EIP": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPublicSubnet2EIP6C96764C"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new Vpc2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)"
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PublicSubnet2/NATGateway": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPublicSubnet2NATGateway6368A523"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new Vpc2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)"
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PrivateSubnet1/Subnet": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPrivateSubnet1Subnet4D744A1C"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
+        "Array.forEach (:)",
+        "...aws-cdk-lib..."
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PrivateSubnet1/RouteTable": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPrivateSubnet1RouteTable055E5EB6"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
+        "Array.forEach (:)",
+        "...aws-cdk-lib..."
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PrivateSubnet1/RouteTableAssociation": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPrivateSubnet1RouteTableAssociation783980FA"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
+        "Array.forEach (:)",
+        "...aws-cdk-lib..."
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PrivateSubnet1/DefaultRoute": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPrivateSubnet1DefaultRoute67135688"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new Vpc2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)"
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PrivateSubnet2/Subnet": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPrivateSubnet2SubnetB38BAA0C"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
+        "Array.forEach (:)",
+        "...aws-cdk-lib..."
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PrivateSubnet2/RouteTable": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPrivateSubnet2RouteTableAB6F17CF"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
+        "Array.forEach (:)",
+        "...aws-cdk-lib..."
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PrivateSubnet2/RouteTableAssociation": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPrivateSubnet2RouteTableAssociation11BA5384"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
+        "Array.forEach (:)",
+        "...aws-cdk-lib..."
+      ]
+    }
+  ],
+  "/localstack/PatientManagementVPC:/PrivateSubnet2/DefaultRoute": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientManagementVPCPrivateSubnet2DefaultRouteF70D3D8C"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new Vpc2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)"
       ]
     }
   ]

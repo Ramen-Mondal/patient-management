@@ -1,1 +1,395 @@
-{}
+{
+ "Resources": {
+  "PatientManagementVPC1A115009": {
+   "Type": "AWS::EC2::VPC",
+   "Properties": {
+    "CidrBlock": "10.0.0.0/16",
+    "EnableDnsHostnames": true,
+    "EnableDnsSupport": true,
+    "InstanceTenancy": "default",
+    "Tags": [
+     {
+      "Key": "Name",
+      "Value": "PatientManagementVPC"
+     }
+    ]
+   }
+  },
+  "PatientManagementVPCPublicSubnet1SubnetFE84BEFE": {
+   "Type": "AWS::EC2::Subnet",
+   "Properties": {
+    "AvailabilityZone": {
+     "Fn::Select": [
+      0,
+      {
+       "Fn::GetAZs": ""
+      }
+     ]
+    },
+    "CidrBlock": "10.0.0.0/18",
+    "MapPublicIpOnLaunch": true,
+    "Tags": [
+     {
+      "Key": "aws-cdk:subnet-name",
+      "Value": "Public"
+     },
+     {
+      "Key": "aws-cdk:subnet-type",
+      "Value": "Public"
+     },
+     {
+      "Key": "Name",
+      "Value": "localstack/PatientManagementVPC:/PublicSubnet1"
+     }
+    ],
+    "VpcId": {
+     "Ref": "PatientManagementVPC1A115009"
+    }
+   }
+  },
+  "PatientManagementVPCPublicSubnet1RouteTable4FB2D061": {
+   "Type": "AWS::EC2::RouteTable",
+   "Properties": {
+    "Tags": [
+     {
+      "Key": "Name",
+      "Value": "localstack/PatientManagementVPC:/PublicSubnet1"
+     }
+    ],
+    "VpcId": {
+     "Ref": "PatientManagementVPC1A115009"
+    }
+   }
+  },
+  "PatientManagementVPCPublicSubnet1RouteTableAssociation2EE560DF": {
+   "Type": "AWS::EC2::SubnetRouteTableAssociation",
+   "Properties": {
+    "RouteTableId": {
+     "Ref": "PatientManagementVPCPublicSubnet1RouteTable4FB2D061"
+    },
+    "SubnetId": {
+     "Ref": "PatientManagementVPCPublicSubnet1SubnetFE84BEFE"
+    }
+   }
+  },
+  "PatientManagementVPCPublicSubnet1DefaultRouteFB7F5A02": {
+   "Type": "AWS::EC2::Route",
+   "Properties": {
+    "DestinationCidrBlock": "0.0.0.0/0",
+    "GatewayId": {
+     "Ref": "PatientManagementVPCIGW124381B6"
+    },
+    "RouteTableId": {
+     "Ref": "PatientManagementVPCPublicSubnet1RouteTable4FB2D061"
+    }
+   },
+   "DependsOn": [
+    "PatientManagementVPCVPCGW9E43EDF7"
+   ]
+  },
+  "PatientManagementVPCPublicSubnet1EIP40850451": {
+   "Type": "AWS::EC2::EIP",
+   "Properties": {
+    "Domain": "vpc",
+    "Tags": [
+     {
+      "Key": "Name",
+      "Value": "localstack/PatientManagementVPC:/PublicSubnet1"
+     }
+    ]
+   }
+  },
+  "PatientManagementVPCPublicSubnet1NATGateway481378DF": {
+   "Type": "AWS::EC2::NatGateway",
+   "Properties": {
+    "AllocationId": {
+     "Fn::GetAtt": [
+      "PatientManagementVPCPublicSubnet1EIP40850451",
+      "AllocationId"
+     ]
+    },
+    "SubnetId": {
+     "Ref": "PatientManagementVPCPublicSubnet1SubnetFE84BEFE"
+    },
+    "Tags": [
+     {
+      "Key": "Name",
+      "Value": "localstack/PatientManagementVPC:/PublicSubnet1"
+     }
+    ]
+   },
+   "DependsOn": [
+    "PatientManagementVPCPublicSubnet1DefaultRouteFB7F5A02",
+    "PatientManagementVPCPublicSubnet1RouteTableAssociation2EE560DF"
+   ]
+  },
+  "PatientManagementVPCPublicSubnet2Subnet065C6CA5": {
+   "Type": "AWS::EC2::Subnet",
+   "Properties": {
+    "AvailabilityZone": {
+     "Fn::Select": [
+      1,
+      {
+       "Fn::GetAZs": ""
+      }
+     ]
+    },
+    "CidrBlock": "10.0.64.0/18",
+    "MapPublicIpOnLaunch": true,
+    "Tags": [
+     {
+      "Key": "aws-cdk:subnet-name",
+      "Value": "Public"
+     },
+     {
+      "Key": "aws-cdk:subnet-type",
+      "Value": "Public"
+     },
+     {
+      "Key": "Name",
+      "Value": "localstack/PatientManagementVPC:/PublicSubnet2"
+     }
+    ],
+    "VpcId": {
+     "Ref": "PatientManagementVPC1A115009"
+    }
+   }
+  },
+  "PatientManagementVPCPublicSubnet2RouteTableFD39FF98": {
+   "Type": "AWS::EC2::RouteTable",
+   "Properties": {
+    "Tags": [
+     {
+      "Key": "Name",
+      "Value": "localstack/PatientManagementVPC:/PublicSubnet2"
+     }
+    ],
+    "VpcId": {
+     "Ref": "PatientManagementVPC1A115009"
+    }
+   }
+  },
+  "PatientManagementVPCPublicSubnet2RouteTableAssociationE5700D42": {
+   "Type": "AWS::EC2::SubnetRouteTableAssociation",
+   "Properties": {
+    "RouteTableId": {
+     "Ref": "PatientManagementVPCPublicSubnet2RouteTableFD39FF98"
+    },
+    "SubnetId": {
+     "Ref": "PatientManagementVPCPublicSubnet2Subnet065C6CA5"
+    }
+   }
+  },
+  "PatientManagementVPCPublicSubnet2DefaultRouteCE7DA4EC": {
+   "Type": "AWS::EC2::Route",
+   "Properties": {
+    "DestinationCidrBlock": "0.0.0.0/0",
+    "GatewayId": {
+     "Ref": "PatientManagementVPCIGW124381B6"
+    },
+    "RouteTableId": {
+     "Ref": "PatientManagementVPCPublicSubnet2RouteTableFD39FF98"
+    }
+   },
+   "DependsOn": [
+    "PatientManagementVPCVPCGW9E43EDF7"
+   ]
+  },
+  "PatientManagementVPCPublicSubnet2EIP6C96764C": {
+   "Type": "AWS::EC2::EIP",
+   "Properties": {
+    "Domain": "vpc",
+    "Tags": [
+     {
+      "Key": "Name",
+      "Value": "localstack/PatientManagementVPC:/PublicSubnet2"
+     }
+    ]
+   }
+  },
+  "PatientManagementVPCPublicSubnet2NATGateway6368A523": {
+   "Type": "AWS::EC2::NatGateway",
+   "Properties": {
+    "AllocationId": {
+     "Fn::GetAtt": [
+      "PatientManagementVPCPublicSubnet2EIP6C96764C",
+      "AllocationId"
+     ]
+    },
+    "SubnetId": {
+     "Ref": "PatientManagementVPCPublicSubnet2Subnet065C6CA5"
+    },
+    "Tags": [
+     {
+      "Key": "Name",
+      "Value": "localstack/PatientManagementVPC:/PublicSubnet2"
+     }
+    ]
+   },
+   "DependsOn": [
+    "PatientManagementVPCPublicSubnet2DefaultRouteCE7DA4EC",
+    "PatientManagementVPCPublicSubnet2RouteTableAssociationE5700D42"
+   ]
+  },
+  "PatientManagementVPCPrivateSubnet1Subnet4D744A1C": {
+   "Type": "AWS::EC2::Subnet",
+   "Properties": {
+    "AvailabilityZone": {
+     "Fn::Select": [
+      0,
+      {
+       "Fn::GetAZs": ""
+      }
+     ]
+    },
+    "CidrBlock": "10.0.128.0/18",
+    "MapPublicIpOnLaunch": false,
+    "Tags": [
+     {
+      "Key": "aws-cdk:subnet-name",
+      "Value": "Private"
+     },
+     {
+      "Key": "aws-cdk:subnet-type",
+      "Value": "Private"
+     },
+     {
+      "Key": "Name",
+      "Value": "localstack/PatientManagementVPC:/PrivateSubnet1"
+     }
+    ],
+    "VpcId": {
+     "Ref": "PatientManagementVPC1A115009"
+    }
+   }
+  },
+  "PatientManagementVPCPrivateSubnet1RouteTable055E5EB6": {
+   "Type": "AWS::EC2::RouteTable",
+   "Properties": {
+    "Tags": [
+     {
+      "Key": "Name",
+      "Value": "localstack/PatientManagementVPC:/PrivateSubnet1"
+     }
+    ],
+    "VpcId": {
+     "Ref": "PatientManagementVPC1A115009"
+    }
+   }
+  },
+  "PatientManagementVPCPrivateSubnet1RouteTableAssociation783980FA": {
+   "Type": "AWS::EC2::SubnetRouteTableAssociation",
+   "Properties": {
+    "RouteTableId": {
+     "Ref": "PatientManagementVPCPrivateSubnet1RouteTable055E5EB6"
+    },
+    "SubnetId": {
+     "Ref": "PatientManagementVPCPrivateSubnet1Subnet4D744A1C"
+    }
+   }
+  },
+  "PatientManagementVPCPrivateSubnet1DefaultRoute67135688": {
+   "Type": "AWS::EC2::Route",
+   "Properties": {
+    "DestinationCidrBlock": "0.0.0.0/0",
+    "NatGatewayId": {
+     "Ref": "PatientManagementVPCPublicSubnet1NATGateway481378DF"
+    },
+    "RouteTableId": {
+     "Ref": "PatientManagementVPCPrivateSubnet1RouteTable055E5EB6"
+    }
+   }
+  },
+  "PatientManagementVPCPrivateSubnet2SubnetB38BAA0C": {
+   "Type": "AWS::EC2::Subnet",
+   "Properties": {
+    "AvailabilityZone": {
+     "Fn::Select": [
+      1,
+      {
+       "Fn::GetAZs": ""
+      }
+     ]
+    },
+    "CidrBlock": "10.0.192.0/18",
+    "MapPublicIpOnLaunch": false,
+    "Tags": [
+     {
+      "Key": "aws-cdk:subnet-name",
+      "Value": "Private"
+     },
+     {
+      "Key": "aws-cdk:subnet-type",
+      "Value": "Private"
+     },
+     {
+      "Key": "Name",
+      "Value": "localstack/PatientManagementVPC:/PrivateSubnet2"
+     }
+    ],
+    "VpcId": {
+     "Ref": "PatientManagementVPC1A115009"
+    }
+   }
+  },
+  "PatientManagementVPCPrivateSubnet2RouteTableAB6F17CF": {
+   "Type": "AWS::EC2::RouteTable",
+   "Properties": {
+    "Tags": [
+     {
+      "Key": "Name",
+      "Value": "localstack/PatientManagementVPC:/PrivateSubnet2"
+     }
+    ],
+    "VpcId": {
+     "Ref": "PatientManagementVPC1A115009"
+    }
+   }
+  },
+  "PatientManagementVPCPrivateSubnet2RouteTableAssociation11BA5384": {
+   "Type": "AWS::EC2::SubnetRouteTableAssociation",
+   "Properties": {
+    "RouteTableId": {
+     "Ref": "PatientManagementVPCPrivateSubnet2RouteTableAB6F17CF"
+    },
+    "SubnetId": {
+     "Ref": "PatientManagementVPCPrivateSubnet2SubnetB38BAA0C"
+    }
+   }
+  },
+  "PatientManagementVPCPrivateSubnet2DefaultRouteF70D3D8C": {
+   "Type": "AWS::EC2::Route",
+   "Properties": {
+    "DestinationCidrBlock": "0.0.0.0/0",
+    "NatGatewayId": {
+     "Ref": "PatientManagementVPCPublicSubnet2NATGateway6368A523"
+    },
+    "RouteTableId": {
+     "Ref": "PatientManagementVPCPrivateSubnet2RouteTableAB6F17CF"
+    }
+   }
+  },
+  "PatientManagementVPCIGW124381B6": {
+   "Type": "AWS::EC2::InternetGateway",
+   "Properties": {
+    "Tags": [
+     {
+      "Key": "Name",
+      "Value": "PatientManagementVPC"
+     }
+    ]
+   }
+  },
+  "PatientManagementVPCVPCGW9E43EDF7": {
+   "Type": "AWS::EC2::VPCGatewayAttachment",
+   "Properties": {
+    "InternetGatewayId": {
+     "Ref": "PatientManagementVPCIGW124381B6"
+    },
+    "VpcId": {
+     "Ref": "PatientManagementVPC1A115009"
+    }
+   }
+  }
+ }
+}
