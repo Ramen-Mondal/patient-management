@@ -3,11 +3,11 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
-        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
-        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
-        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)",
-        "Immediate._onImmediate (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211987)",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211943)",
+        "Immediate._onImmediate (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211987)",
         "...node internals..."
       ]
     }
@@ -21,11 +21,11 @@
       "type": "aws:cdk:creationStack",
       "data": [
         "...new Vpc2 in aws-cdk-lib...",
-        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
-        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
-        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
-        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)",
-        "Immediate._onImmediate (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211987)",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211943)",
+        "Immediate._onImmediate (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211987)",
         "...node internals..."
       ]
     }
@@ -39,11 +39,11 @@
       "type": "aws:cdk:creationStack",
       "data": [
         "...new Vpc2 in aws-cdk-lib...",
-        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
-        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
-        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
-        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)",
-        "Immediate._onImmediate (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211987)",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211943)",
+        "Immediate._onImmediate (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211987)",
         "...node internals..."
       ]
     }
@@ -57,11 +57,47 @@
       "type": "aws:cdk:creationStack",
       "data": [
         "...new Vpc2 in aws-cdk-lib...",
-        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
-        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
-        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
-        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)",
-        "Immediate._onImmediate (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211987)",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211943)",
+        "Immediate._onImmediate (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211987)",
+        "...node internals..."
+      ]
+    }
+  ],
+  "/localstack/AuthServiceDB/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AuthServiceDBC6B688BA"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new DatabaseInstance2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211943)",
+        "Immediate._onImmediate (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211987)",
+        "...node internals..."
+      ]
+    }
+  ],
+  "/localstack/PatientServiceDB/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientServiceDBB84F9BF9"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new DatabaseInstance2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211943)",
+        "Immediate._onImmediate (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211987)",
         "...node internals..."
       ]
     }
@@ -74,7 +110,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
+        ".../tmp/jsii-kernel-EQMxzq/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
         "Array.forEach (:)",
         "...aws-cdk-lib..."
       ]
@@ -88,7 +124,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
+        ".../tmp/jsii-kernel-EQMxzq/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
         "Array.forEach (:)",
         "...aws-cdk-lib..."
       ]
@@ -102,7 +138,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
+        ".../tmp/jsii-kernel-EQMxzq/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
         "Array.forEach (:)",
         "...aws-cdk-lib..."
       ]
@@ -116,13 +152,13 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:197 in aws-cdk-lib...",
+        ".../tmp/jsii-kernel-EQMxzq/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:197 in aws-cdk-lib...",
         "Array.forEach (:)",
         "...new Vpc2 in aws-cdk-lib...",
-        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
-        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
-        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
-        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)"
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211943)"
       ]
     }
   ],
@@ -135,10 +171,10 @@
       "type": "aws:cdk:creationStack",
       "data": [
         "...new Vpc2 in aws-cdk-lib...",
-        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
-        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
-        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
-        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)"
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211943)"
       ]
     }
   ],
@@ -151,10 +187,10 @@
       "type": "aws:cdk:creationStack",
       "data": [
         "...new Vpc2 in aws-cdk-lib...",
-        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
-        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
-        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
-        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)"
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211943)"
       ]
     }
   ],
@@ -166,7 +202,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
+        ".../tmp/jsii-kernel-EQMxzq/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
         "Array.forEach (:)",
         "...aws-cdk-lib..."
       ]
@@ -180,7 +216,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
+        ".../tmp/jsii-kernel-EQMxzq/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
         "Array.forEach (:)",
         "...aws-cdk-lib..."
       ]
@@ -194,7 +230,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
+        ".../tmp/jsii-kernel-EQMxzq/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:257 in aws-cdk-lib...",
         "Array.forEach (:)",
         "...aws-cdk-lib..."
       ]
@@ -208,13 +244,13 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:197 in aws-cdk-lib...",
+        ".../tmp/jsii-kernel-EQMxzq/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:197 in aws-cdk-lib...",
         "Array.forEach (:)",
         "...new Vpc2 in aws-cdk-lib...",
-        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
-        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
-        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
-        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)"
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211943)"
       ]
     }
   ],
@@ -227,10 +263,10 @@
       "type": "aws:cdk:creationStack",
       "data": [
         "...new Vpc2 in aws-cdk-lib...",
-        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
-        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
-        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
-        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)"
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211943)"
       ]
     }
   ],
@@ -243,10 +279,10 @@
       "type": "aws:cdk:creationStack",
       "data": [
         "...new Vpc2 in aws-cdk-lib...",
-        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
-        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
-        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)",
-        "KernelHost.run (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:211943)"
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211943)"
       ]
     }
   ],
@@ -258,7 +294,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
+        ".../tmp/jsii-kernel-EQMxzq/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
         "Array.forEach (:)",
         "...aws-cdk-lib..."
       ]
@@ -272,7 +308,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
+        ".../tmp/jsii-kernel-EQMxzq/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
         "Array.forEach (:)",
         "...aws-cdk-lib..."
       ]
@@ -286,7 +322,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
+        ".../tmp/jsii-kernel-EQMxzq/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
         "Array.forEach (:)",
         "...aws-cdk-lib..."
       ]
@@ -301,9 +337,9 @@
       "type": "aws:cdk:creationStack",
       "data": [
         "...new Vpc2 in aws-cdk-lib...",
-        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
-        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
-        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)"
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)"
       ]
     }
   ],
@@ -315,7 +351,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
+        ".../tmp/jsii-kernel-EQMxzq/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
         "Array.forEach (:)",
         "...aws-cdk-lib..."
       ]
@@ -329,7 +365,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
+        ".../tmp/jsii-kernel-EQMxzq/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
         "Array.forEach (:)",
         "...aws-cdk-lib..."
       ]
@@ -343,7 +379,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        ".../tmp/jsii-kernel-5PyV8U/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
+        ".../tmp/jsii-kernel-EQMxzq/node_modules/aws-cdk-lib/aws-ec2/lib/vpc.js:1:260 in aws-cdk-lib...",
         "Array.forEach (:)",
         "...aws-cdk-lib..."
       ]
@@ -358,9 +394,133 @@
       "type": "aws:cdk:creationStack",
       "data": [
         "...new Vpc2 in aws-cdk-lib...",
-        "Kernel._Kernel_create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:61273)",
-        "Kernel.create (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:52004)",
-        "KernelHost.processRequest (/tmp/jsii-java-runtime12803950633900880412/lib/program.js:1:212888)"
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)"
+      ]
+    }
+  ],
+  "/localstack/AuthServiceDB/SubnetGroup/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AuthServiceDBSubnetGroupCFE5A552"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new DatabaseInstance2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211943)"
+      ]
+    }
+  ],
+  "/localstack/AuthServiceDB/SecurityGroup/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AuthServiceDBSecurityGroupBE6D28EB"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new DatabaseInstance2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)"
+      ]
+    }
+  ],
+  "/localstack/AuthServiceDB/Secret/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "localstackAuthServiceDBSecretE93C53FD3fdaad7efa858a3daf9490cf0a702aeb"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new DatabaseInstance2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)"
+      ]
+    }
+  ],
+  "/localstack/PatientServiceDB/SubnetGroup/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientServiceDBSubnetGroupCED49D16"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new DatabaseInstance2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211943)"
+      ]
+    }
+  ],
+  "/localstack/PatientServiceDB/SecurityGroup/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientServiceDBSecurityGroup6B97C0E5"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new DatabaseInstance2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)"
+      ]
+    }
+  ],
+  "/localstack/PatientServiceDB/Secret/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "localstackPatientServiceDBSecret20E0A9443fdaad7efa858a3daf9490cf0a702aeb"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new DatabaseInstance2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)"
+      ]
+    }
+  ],
+  "/localstack/AuthServiceDB/Secret/Attachment/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AuthServiceDBSecretAttachmentF30406A9"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new DatabaseInstance2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211943)",
+        "Immediate._onImmediate (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211987)"
+      ]
+    }
+  ],
+  "/localstack/PatientServiceDB/Secret/Attachment/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PatientServiceDBSecretAttachment90D77B03"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new DatabaseInstance2 in aws-cdk-lib...",
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211943)",
+        "Immediate._onImmediate (/tmp/jsii-java-runtime17684526457018140760/lib/program.js:1:211987)"
       ]
     }
   ]
