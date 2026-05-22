@@ -1,0 +1,15 @@
+{
+  "/localstack": [
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "Kernel._Kernel_create (/tmp/jsii-java-runtime5921151973823429519/lib/program.js:1:61273)",
+        "Kernel.create (/tmp/jsii-java-runtime5921151973823429519/lib/program.js:1:52004)",
+        "KernelHost.processRequest (/tmp/jsii-java-runtime5921151973823429519/lib/program.js:1:212888)",
+        "KernelHost.run (/tmp/jsii-java-runtime5921151973823429519/lib/program.js:1:211943)",
+        "Immediate._onImmediate (/tmp/jsii-java-runtime5921151973823429519/lib/program.js:1:211987)",
+        "...node internals..."
+      ]
+    }
+  ]
+}
