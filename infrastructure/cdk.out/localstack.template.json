@@ -13,6 +13,9 @@
       "Value": "PatientManagementVPC"
      }
     ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/Resource"
    }
   },
   "PatientManagementVPCPublicSubnet1SubnetFE84BEFE": {
@@ -45,6 +48,9 @@
     "VpcId": {
      "Ref": "PatientManagementVPC1A115009"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PublicSubnet1/Subnet"
    }
   },
   "PatientManagementVPCPublicSubnet1RouteTable4FB2D061": {
@@ -59,6 +65,9 @@
     "VpcId": {
      "Ref": "PatientManagementVPC1A115009"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PublicSubnet1/RouteTable"
    }
   },
   "PatientManagementVPCPublicSubnet1RouteTableAssociation2EE560DF": {
@@ -70,6 +79,9 @@
     "SubnetId": {
      "Ref": "PatientManagementVPCPublicSubnet1SubnetFE84BEFE"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PublicSubnet1/RouteTableAssociation"
    }
   },
   "PatientManagementVPCPublicSubnet1DefaultRouteFB7F5A02": {
@@ -85,7 +97,10 @@
    },
    "DependsOn": [
     "PatientManagementVPCVPCGW9E43EDF7"
-   ]
+   ],
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PublicSubnet1/DefaultRoute"
+   }
   },
   "PatientManagementVPCPublicSubnet1EIP40850451": {
    "Type": "AWS::EC2::EIP",
@@ -97,6 +112,9 @@
       "Value": "localstack/PatientManagementVPC:/PublicSubnet1"
      }
     ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PublicSubnet1/EIP"
    }
   },
   "PatientManagementVPCPublicSubnet1NATGateway481378DF": {
@@ -121,7 +139,10 @@
    "DependsOn": [
     "PatientManagementVPCPublicSubnet1DefaultRouteFB7F5A02",
     "PatientManagementVPCPublicSubnet1RouteTableAssociation2EE560DF"
-   ]
+   ],
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PublicSubnet1/NATGateway"
+   }
   },
   "PatientManagementVPCPublicSubnet2Subnet065C6CA5": {
    "Type": "AWS::EC2::Subnet",
@@ -153,6 +174,9 @@
     "VpcId": {
      "Ref": "PatientManagementVPC1A115009"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PublicSubnet2/Subnet"
    }
   },
   "PatientManagementVPCPublicSubnet2RouteTableFD39FF98": {
@@ -167,6 +191,9 @@
     "VpcId": {
      "Ref": "PatientManagementVPC1A115009"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PublicSubnet2/RouteTable"
    }
   },
   "PatientManagementVPCPublicSubnet2RouteTableAssociationE5700D42": {
@@ -178,6 +205,9 @@
     "SubnetId": {
      "Ref": "PatientManagementVPCPublicSubnet2Subnet065C6CA5"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PublicSubnet2/RouteTableAssociation"
    }
   },
   "PatientManagementVPCPublicSubnet2DefaultRouteCE7DA4EC": {
@@ -193,7 +223,10 @@
    },
    "DependsOn": [
     "PatientManagementVPCVPCGW9E43EDF7"
-   ]
+   ],
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PublicSubnet2/DefaultRoute"
+   }
   },
   "PatientManagementVPCPublicSubnet2EIP6C96764C": {
    "Type": "AWS::EC2::EIP",
@@ -205,6 +238,9 @@
       "Value": "localstack/PatientManagementVPC:/PublicSubnet2"
      }
     ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PublicSubnet2/EIP"
    }
   },
   "PatientManagementVPCPublicSubnet2NATGateway6368A523": {
@@ -229,7 +265,10 @@
    "DependsOn": [
     "PatientManagementVPCPublicSubnet2DefaultRouteCE7DA4EC",
     "PatientManagementVPCPublicSubnet2RouteTableAssociationE5700D42"
-   ]
+   ],
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PublicSubnet2/NATGateway"
+   }
   },
   "PatientManagementVPCPrivateSubnet1Subnet4D744A1C": {
    "Type": "AWS::EC2::Subnet",
@@ -261,6 +300,9 @@
     "VpcId": {
      "Ref": "PatientManagementVPC1A115009"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PrivateSubnet1/Subnet"
    }
   },
   "PatientManagementVPCPrivateSubnet1RouteTable055E5EB6": {
@@ -275,6 +317,9 @@
     "VpcId": {
      "Ref": "PatientManagementVPC1A115009"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PrivateSubnet1/RouteTable"
    }
   },
   "PatientManagementVPCPrivateSubnet1RouteTableAssociation783980FA": {
@@ -286,6 +331,9 @@
     "SubnetId": {
      "Ref": "PatientManagementVPCPrivateSubnet1Subnet4D744A1C"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PrivateSubnet1/RouteTableAssociation"
    }
   },
   "PatientManagementVPCPrivateSubnet1DefaultRoute67135688": {
@@ -298,6 +346,9 @@
     "RouteTableId": {
      "Ref": "PatientManagementVPCPrivateSubnet1RouteTable055E5EB6"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PrivateSubnet1/DefaultRoute"
    }
   },
   "PatientManagementVPCPrivateSubnet2SubnetB38BAA0C": {
@@ -330,6 +381,9 @@
     "VpcId": {
      "Ref": "PatientManagementVPC1A115009"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PrivateSubnet2/Subnet"
    }
   },
   "PatientManagementVPCPrivateSubnet2RouteTableAB6F17CF": {
@@ -344,6 +398,9 @@
     "VpcId": {
      "Ref": "PatientManagementVPC1A115009"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PrivateSubnet2/RouteTable"
    }
   },
   "PatientManagementVPCPrivateSubnet2RouteTableAssociation11BA5384": {
@@ -355,6 +412,9 @@
     "SubnetId": {
      "Ref": "PatientManagementVPCPrivateSubnet2SubnetB38BAA0C"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PrivateSubnet2/RouteTableAssociation"
    }
   },
   "PatientManagementVPCPrivateSubnet2DefaultRouteF70D3D8C": {
@@ -367,6 +427,9 @@
     "RouteTableId": {
      "Ref": "PatientManagementVPCPrivateSubnet2RouteTableAB6F17CF"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/PrivateSubnet2/DefaultRoute"
    }
   },
   "PatientManagementVPCIGW124381B6": {
@@ -378,6 +441,9 @@
       "Value": "PatientManagementVPC"
      }
     ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/IGW"
    }
   },
   "PatientManagementVPCVPCGW9E43EDF7": {
@@ -389,6 +455,9 @@
     "VpcId": {
      "Ref": "PatientManagementVPC1A115009"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementVPC:/VPCGW"
    }
   },
   "AuthServiceDBSubnetGroupCFE5A552": {
@@ -403,6 +472,9 @@
       "Ref": "PatientManagementVPCPrivateSubnet2SubnetB38BAA0C"
      }
     ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/AuthServiceDB/SubnetGroup/Default"
    }
   },
   "AuthServiceDBSecurityGroupBE6D28EB": {
@@ -419,6 +491,9 @@
     "VpcId": {
      "Ref": "PatientManagementVPC1A115009"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/AuthServiceDB/SecurityGroup/Resource"
    }
   },
   "localstackAuthServiceDBSecretE93C53FD3fdaad7efa858a3daf9490cf0a702aeb": {
@@ -443,7 +518,10 @@
     }
    },
    "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete"
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "localstack/AuthServiceDB/Secret/Resource"
+   }
   },
   "AuthServiceDBSecretAttachmentF30406A9": {
    "Type": "AWS::SecretsManager::SecretTargetAttachment",
@@ -455,6 +533,9 @@
      "Ref": "AuthServiceDBC6B688BA"
     },
     "TargetType": "AWS::RDS::DBInstance"
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/AuthServiceDB/Secret/Attachment/Resource"
    }
   },
   "AuthServiceDBC6B688BA": {
@@ -493,7 +574,10 @@
     ]
    },
    "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete"
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "localstack/AuthServiceDB/Resource"
+   }
   },
   "PatientServiceDBSubnetGroupCED49D16": {
    "Type": "AWS::RDS::DBSubnetGroup",
@@ -507,6 +591,9 @@
       "Ref": "PatientManagementVPCPrivateSubnet2SubnetB38BAA0C"
      }
     ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientServiceDB/SubnetGroup/Default"
    }
   },
   "PatientServiceDBSecurityGroup6B97C0E5": {
@@ -523,6 +610,9 @@
     "VpcId": {
      "Ref": "PatientManagementVPC1A115009"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientServiceDB/SecurityGroup/Resource"
    }
   },
   "localstackPatientServiceDBSecret20E0A9443fdaad7efa858a3daf9490cf0a702aeb": {
@@ -547,7 +637,10 @@
     }
    },
    "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete"
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientServiceDB/Secret/Resource"
+   }
   },
   "PatientServiceDBSecretAttachment90D77B03": {
    "Type": "AWS::SecretsManager::SecretTargetAttachment",
@@ -559,6 +652,9 @@
      "Ref": "PatientServiceDBB84F9BF9"
     },
     "TargetType": "AWS::RDS::DBInstance"
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientServiceDB/Secret/Attachment/Resource"
    }
   },
   "PatientServiceDBB84F9BF9": {
@@ -597,28 +693,24 @@
     ]
    },
    "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete"
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientServiceDB/Resource"
+   }
   },
   "AuthServiceDBHealthCheck": {
    "Type": "AWS::Route53::HealthCheck",
    "Properties": {
     "HealthCheckConfig": {
      "FailureThreshold": 3,
-     "IPAddress": {
-      "Fn::GetAtt": [
-       "AuthServiceDBC6B688BA",
-       "Endpoint.Address"
-      ]
-     },
-     "Port": {
-      "Fn::GetAtt": [
-       "AuthServiceDBC6B688BA",
-       "Endpoint.Port"
-      ]
-     },
+     "IPAddress": "127.0.0.1",
+     "Port": 5432,
      "RequestInterval": 30,
      "Type": "TCP"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/AuthServiceDBHealthCheck"
    }
   },
   "PatientServiceDBHealthCheck": {
@@ -626,45 +718,21 @@
    "Properties": {
     "HealthCheckConfig": {
      "FailureThreshold": 3,
-     "IPAddress": {
-      "Fn::GetAtt": [
-       "PatientServiceDBB84F9BF9",
-       "Endpoint.Address"
-      ]
-     },
-     "Port": {
-      "Fn::GetAtt": [
-       "PatientServiceDBB84F9BF9",
-       "Endpoint.Port"
-      ]
-     },
+     "IPAddress": "127.0.0.1",
+     "Port": 5432,
      "RequestInterval": 30,
      "Type": "TCP"
     }
-   }
-  },
-  "MskCluster": {
-   "Type": "AWS::MSK::Cluster",
-   "Properties": {
-    "BrokerNodeGroupInfo": {
-     "BrokerAZDistribution": "DEFAULT",
-     "ClientSubnets": [
-      {
-       "Ref": "PatientManagementVPCPrivateSubnet1Subnet4D744A1C"
-      },
-      {
-       "Ref": "PatientManagementVPCPrivateSubnet2SubnetB38BAA0C"
-      }
-     ],
-     "InstanceType": "kafka.m5.xlarge"
-    },
-    "ClusterName": "kafka-cluster",
-    "KafkaVersion": "4.0.0",
-    "NumberOfBrokerNodes": 1
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientServiceDBHealthCheck"
    }
   },
   "PatientManagementCluster98E10F8D": {
-   "Type": "AWS::ECS::Cluster"
+   "Type": "AWS::ECS::Cluster",
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementCluster/Resource"
+   }
   },
   "PatientManagementClusterDefaultServiceDiscoveryNamespace72C5F264": {
    "Type": "AWS::ServiceDiscovery::PrivateDnsNamespace",
@@ -673,6 +741,9 @@
     "Vpc": {
      "Ref": "PatientManagementVPC1A115009"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientManagementCluster/DefaultServiceDiscoveryNamespace/Resource"
    }
   },
   "AuthServiceTaskTaskRoleE466B974": {
@@ -690,6 +761,9 @@
      ],
      "Version": "2012-10-17"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/AuthServiceTask/TaskRole/Resource"
    }
   },
   "AuthServiceTask82E6680D": {
@@ -806,6 +880,9 @@
       "Arn"
      ]
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/AuthServiceTask/Resource"
    }
   },
   "AuthServiceTaskExecutionRoleA1258495": {
@@ -823,6 +900,9 @@
      ],
      "Version": "2012-10-17"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/AuthServiceTask/ExecutionRole/Resource"
    }
   },
   "AuthServiceTaskExecutionRoleDefaultPolicyF20AD0D3": {
@@ -852,6 +932,9 @@
       "Ref": "AuthServiceTaskExecutionRoleA1258495"
      }
     ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/AuthServiceTask/ExecutionRole/DefaultPolicy/Resource"
    }
   },
   "AuthServiceLogGroup34125B38": {
@@ -861,7 +944,10 @@
     "RetentionInDays": 1
    },
    "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete"
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "localstack/AuthServiceLogGroup/Resource"
+   }
   },
   "AuthService3C2B741A": {
    "Type": "AWS::ECS::Service",
@@ -914,7 +1000,10 @@
     "AuthServiceDBSubnetGroupCFE5A552",
     "AuthServiceDBHealthCheck",
     "AuthServiceTaskTaskRoleE466B974"
-   ]
+   ],
+   "Metadata": {
+    "aws:cdk:path": "localstack/AuthService/Service"
+   }
   },
   "AuthServiceSecurityGroup67F2FA7D": {
    "Type": "AWS::EC2::SecurityGroup",
@@ -939,7 +1028,10 @@
     "AuthServiceDBSubnetGroupCFE5A552",
     "AuthServiceDBHealthCheck",
     "AuthServiceTaskTaskRoleE466B974"
-   ]
+   ],
+   "Metadata": {
+    "aws:cdk:path": "localstack/AuthService/SecurityGroup/Resource"
+   }
   },
   "BillingServiceTaskTaskRole7A547BBF": {
    "Type": "AWS::IAM::Role",
@@ -956,6 +1048,9 @@
      ],
      "Version": "2012-10-17"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/BillingServiceTask/TaskRole/Resource"
    }
   },
   "BillingServiceTask30D9C66E": {
@@ -1017,6 +1112,9 @@
       "Arn"
      ]
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/BillingServiceTask/Resource"
    }
   },
   "BillingServiceTaskExecutionRole11FE8DE2": {
@@ -1034,6 +1132,9 @@
      ],
      "Version": "2012-10-17"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/BillingServiceTask/ExecutionRole/Resource"
    }
   },
   "BillingServiceTaskExecutionRoleDefaultPolicy4F4033C9": {
@@ -1063,6 +1164,9 @@
       "Ref": "BillingServiceTaskExecutionRole11FE8DE2"
      }
     ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/BillingServiceTask/ExecutionRole/DefaultPolicy/Resource"
    }
   },
   "BillingServiceLogGroupDD61E740": {
@@ -1072,7 +1176,10 @@
     "RetentionInDays": 1
    },
    "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete"
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "localstack/BillingServiceLogGroup/Resource"
+   }
   },
   "BillingServiceFEB36D90": {
    "Type": "AWS::ECS::Service",
@@ -1119,7 +1226,10 @@
    },
    "DependsOn": [
     "BillingServiceTaskTaskRole7A547BBF"
-   ]
+   ],
+   "Metadata": {
+    "aws:cdk:path": "localstack/BillingService/Service"
+   }
   },
   "BillingServiceSecurityGroup3783AD35": {
    "Type": "AWS::EC2::SecurityGroup",
@@ -1138,7 +1248,10 @@
    },
    "DependsOn": [
     "BillingServiceTaskTaskRole7A547BBF"
-   ]
+   ],
+   "Metadata": {
+    "aws:cdk:path": "localstack/BillingService/SecurityGroup/Resource"
+   }
   },
   "AnalyticsServiceTaskTaskRole1ABB10CB": {
    "Type": "AWS::IAM::Role",
@@ -1155,6 +1268,9 @@
      ],
      "Version": "2012-10-17"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/AnalyticsServiceTask/TaskRole/Resource"
    }
   },
   "AnalyticsServiceTaskC3AFBC47": {
@@ -1211,6 +1327,9 @@
       "Arn"
      ]
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/AnalyticsServiceTask/Resource"
    }
   },
   "AnalyticsServiceTaskExecutionRoleBAF654B2": {
@@ -1228,6 +1347,9 @@
      ],
      "Version": "2012-10-17"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/AnalyticsServiceTask/ExecutionRole/Resource"
    }
   },
   "AnalyticsServiceTaskExecutionRoleDefaultPolicy99868928": {
@@ -1257,6 +1379,9 @@
       "Ref": "AnalyticsServiceTaskExecutionRoleBAF654B2"
      }
     ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/AnalyticsServiceTask/ExecutionRole/DefaultPolicy/Resource"
    }
   },
   "AnalyticsServiceLogGroupBD82F12A": {
@@ -1266,7 +1391,10 @@
     "RetentionInDays": 1
    },
    "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete"
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "localstack/AnalyticsServiceLogGroup/Resource"
+   }
   },
   "AnalyticsServiceCD38C492": {
    "Type": "AWS::ECS::Service",
@@ -1312,9 +1440,11 @@
     }
    },
    "DependsOn": [
-    "AnalyticsServiceTaskTaskRole1ABB10CB",
-    "MskCluster"
-   ]
+    "AnalyticsServiceTaskTaskRole1ABB10CB"
+   ],
+   "Metadata": {
+    "aws:cdk:path": "localstack/AnalyticsService/Service"
+   }
   },
   "AnalyticsServiceSecurityGroupBA6AE98A": {
    "Type": "AWS::EC2::SecurityGroup",
@@ -1332,9 +1462,11 @@
     }
    },
    "DependsOn": [
-    "AnalyticsServiceTaskTaskRole1ABB10CB",
-    "MskCluster"
-   ]
+    "AnalyticsServiceTaskTaskRole1ABB10CB"
+   ],
+   "Metadata": {
+    "aws:cdk:path": "localstack/AnalyticsService/SecurityGroup/Resource"
+   }
   },
   "PatientServiceTaskTaskRole4FB5B4E2": {
    "Type": "AWS::IAM::Role",
@@ -1351,6 +1483,9 @@
      ],
      "Version": "2012-10-17"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientServiceTask/TaskRole/Resource"
    }
   },
   "PatientServiceTaskF865B565": {
@@ -1471,6 +1606,9 @@
       "Arn"
      ]
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientServiceTask/Resource"
    }
   },
   "PatientServiceTaskExecutionRole3782903B": {
@@ -1488,6 +1626,9 @@
      ],
      "Version": "2012-10-17"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientServiceTask/ExecutionRole/Resource"
    }
   },
   "PatientServiceTaskExecutionRoleDefaultPolicy3866E91E": {
@@ -1517,6 +1658,9 @@
       "Ref": "PatientServiceTaskExecutionRole3782903B"
      }
     ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientServiceTask/ExecutionRole/DefaultPolicy/Resource"
    }
   },
   "PatientServiceLogGroup4A5C3809": {
@@ -1526,7 +1670,10 @@
     "RetentionInDays": 1
    },
    "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete"
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientServiceLogGroup/Resource"
+   }
   },
   "PatientServiceA65AB800": {
    "Type": "AWS::ECS::Service",
@@ -1574,7 +1721,6 @@
    "DependsOn": [
     "BillingServiceSecurityGroup3783AD35",
     "BillingServiceFEB36D90",
-    "MskCluster",
     "PatientServiceDBB84F9BF9",
     "PatientServiceDBSecretAttachment90D77B03",
     "localstackPatientServiceDBSecret20E0A9443fdaad7efa858a3daf9490cf0a702aeb",
@@ -1582,7 +1728,10 @@
     "PatientServiceDBSubnetGroupCED49D16",
     "PatientServiceDBHealthCheck",
     "PatientServiceTaskTaskRole4FB5B4E2"
-   ]
+   ],
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientService/Service"
+   }
   },
   "PatientServiceSecurityGroup547BE1F2": {
    "Type": "AWS::EC2::SecurityGroup",
@@ -1602,7 +1751,6 @@
    "DependsOn": [
     "BillingServiceSecurityGroup3783AD35",
     "BillingServiceFEB36D90",
-    "MskCluster",
     "PatientServiceDBB84F9BF9",
     "PatientServiceDBSecretAttachment90D77B03",
     "localstackPatientServiceDBSecret20E0A9443fdaad7efa858a3daf9490cf0a702aeb",
@@ -1610,7 +1758,10 @@
     "PatientServiceDBSubnetGroupCED49D16",
     "PatientServiceDBHealthCheck",
     "PatientServiceTaskTaskRole4FB5B4E2"
-   ]
+   ],
+   "Metadata": {
+    "aws:cdk:path": "localstack/PatientService/SecurityGroup/Resource"
+   }
   },
   "APIGatewayTaskDefinitionTaskRole894A199F": {
    "Type": "AWS::IAM::Role",
@@ -1627,6 +1778,9 @@
      ],
      "Version": "2012-10-17"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/APIGatewayTaskDefinition/TaskRole/Resource"
    }
   },
   "APIGatewayTaskDefinition199BB1B7": {
@@ -1687,6 +1841,9 @@
       "Arn"
      ]
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/APIGatewayTaskDefinition/Resource"
    }
   },
   "APIGatewayTaskDefinitionExecutionRole555CBA21": {
@@ -1704,6 +1861,9 @@
      ],
      "Version": "2012-10-17"
     }
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/APIGatewayTaskDefinition/ExecutionRole/Resource"
    }
   },
   "APIGatewayTaskDefinitionExecutionRoleDefaultPolicy582C1C35": {
@@ -1733,6 +1893,9 @@
       "Ref": "APIGatewayTaskDefinitionExecutionRole555CBA21"
      }
     ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/APIGatewayTaskDefinition/ExecutionRole/DefaultPolicy/Resource"
    }
   },
   "ApiGatewayLogGroupA9770429": {
@@ -1742,118 +1905,12 @@
     "RetentionInDays": 1
    },
    "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete"
-  },
-  "APIGatewayServiceLBDA2B7609": {
-   "Type": "AWS::ElasticLoadBalancingV2::LoadBalancer",
-   "Properties": {
-    "LoadBalancerAttributes": [
-     {
-      "Key": "deletion_protection.enabled",
-      "Value": "false"
-     }
-    ],
-    "Scheme": "internet-facing",
-    "SecurityGroups": [
-     {
-      "Fn::GetAtt": [
-       "APIGatewayServiceLBSecurityGroup8524BFD1",
-       "GroupId"
-      ]
-     }
-    ],
-    "Subnets": [
-     {
-      "Ref": "PatientManagementVPCPublicSubnet1SubnetFE84BEFE"
-     },
-     {
-      "Ref": "PatientManagementVPCPublicSubnet2Subnet065C6CA5"
-     }
-    ],
-    "Type": "application"
-   },
-   "DependsOn": [
-    "PatientManagementVPCPublicSubnet1DefaultRouteFB7F5A02",
-    "PatientManagementVPCPublicSubnet1RouteTableAssociation2EE560DF",
-    "PatientManagementVPCPublicSubnet2DefaultRouteCE7DA4EC",
-    "PatientManagementVPCPublicSubnet2RouteTableAssociationE5700D42"
-   ]
-  },
-  "APIGatewayServiceLBSecurityGroup8524BFD1": {
-   "Type": "AWS::EC2::SecurityGroup",
-   "Properties": {
-    "GroupDescription": "Automatically created Security Group for ELB localstackAPIGatewayServiceLB0192615A",
-    "SecurityGroupIngress": [
-     {
-      "CidrIp": "0.0.0.0/0",
-      "Description": "Allow from anyone on port 80",
-      "FromPort": 80,
-      "IpProtocol": "tcp",
-      "ToPort": 80
-     }
-    ],
-    "VpcId": {
-     "Ref": "PatientManagementVPC1A115009"
-    }
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "localstack/ApiGatewayLogGroup/Resource"
    }
   },
-  "APIGatewayServiceLBSecurityGrouptolocalstackAPIGatewayServiceSecurityGroup37054EEE4004CAF8FB32": {
-   "Type": "AWS::EC2::SecurityGroupEgress",
-   "Properties": {
-    "Description": "Load balancer to target",
-    "DestinationSecurityGroupId": {
-     "Fn::GetAtt": [
-      "APIGatewayServiceSecurityGroup98F3B93B",
-      "GroupId"
-     ]
-    },
-    "FromPort": 4004,
-    "GroupId": {
-     "Fn::GetAtt": [
-      "APIGatewayServiceLBSecurityGroup8524BFD1",
-      "GroupId"
-     ]
-    },
-    "IpProtocol": "tcp",
-    "ToPort": 4004
-   }
-  },
-  "APIGatewayServiceLBPublicListenerD6FA7F47": {
-   "Type": "AWS::ElasticLoadBalancingV2::Listener",
-   "Properties": {
-    "DefaultActions": [
-     {
-      "TargetGroupArn": {
-       "Ref": "APIGatewayServiceLBPublicListenerECSGroupF9D8CC70"
-      },
-      "Type": "forward"
-     }
-    ],
-    "LoadBalancerArn": {
-     "Ref": "APIGatewayServiceLBDA2B7609"
-    },
-    "Port": 80,
-    "Protocol": "HTTP"
-   }
-  },
-  "APIGatewayServiceLBPublicListenerECSGroupF9D8CC70": {
-   "Type": "AWS::ElasticLoadBalancingV2::TargetGroup",
-   "Properties": {
-    "Port": 80,
-    "Protocol": "HTTP",
-    "TargetGroupAttributes": [
-     {
-      "Key": "stickiness.enabled",
-      "Value": "false"
-     }
-    ],
-    "TargetType": "ip",
-    "VpcId": {
-     "Ref": "PatientManagementVPC1A115009"
-    }
-   }
-  },
-  "APIGatewayServiceA5206149": {
+  "APIGatewayServiceF0339D62": {
    "Type": "AWS::ECS::Service",
    "Properties": {
     "Cluster": {
@@ -1870,24 +1927,14 @@
     },
     "DesiredCount": 1,
     "EnableECSManagedTags": false,
-    "HealthCheckGracePeriodSeconds": 60,
     "LaunchType": "FARGATE",
-    "LoadBalancers": [
-     {
-      "ContainerName": "APIGatewayContainer",
-      "ContainerPort": 4004,
-      "TargetGroupArn": {
-       "Ref": "APIGatewayServiceLBPublicListenerECSGroupF9D8CC70"
-      }
-     }
-    ],
     "NetworkConfiguration": {
      "AwsvpcConfiguration": {
       "AssignPublicIp": "DISABLED",
       "SecurityGroups": [
        {
         "Fn::GetAtt": [
-         "APIGatewayServiceSecurityGroup98F3B93B",
+         "APIGatewayServiceSecurityGroup77EF75F2",
          "GroupId"
         ]
        }
@@ -1908,15 +1955,16 @@
     }
    },
    "DependsOn": [
-    "APIGatewayServiceLBPublicListenerECSGroupF9D8CC70",
-    "APIGatewayServiceLBPublicListenerD6FA7F47",
     "APIGatewayTaskDefinitionTaskRole894A199F"
-   ]
+   ],
+   "Metadata": {
+    "aws:cdk:path": "localstack/APIGatewayService/Service"
+   }
   },
-  "APIGatewayServiceSecurityGroup98F3B93B": {
+  "APIGatewayServiceSecurityGroup77EF75F2": {
    "Type": "AWS::EC2::SecurityGroup",
    "Properties": {
-    "GroupDescription": "localstack/APIGatewayService/Service/SecurityGroup",
+    "GroupDescription": "localstack/APIGatewayService/SecurityGroup",
     "SecurityGroupEgress": [
      {
       "CidrIp": "0.0.0.0/0",
@@ -1930,57 +1978,286 @@
    },
    "DependsOn": [
     "APIGatewayTaskDefinitionTaskRole894A199F"
-   ]
-  },
-  "APIGatewayServiceSecurityGroupfromlocalstackAPIGatewayServiceLBSecurityGroup32B4CA424004CA85E4CD": {
-   "Type": "AWS::EC2::SecurityGroupIngress",
-   "Properties": {
-    "Description": "Load balancer to target",
-    "FromPort": 4004,
-    "GroupId": {
-     "Fn::GetAtt": [
-      "APIGatewayServiceSecurityGroup98F3B93B",
-      "GroupId"
-     ]
-    },
-    "IpProtocol": "tcp",
-    "SourceSecurityGroupId": {
-     "Fn::GetAtt": [
-      "APIGatewayServiceLBSecurityGroup8524BFD1",
-      "GroupId"
-     ]
-    },
-    "ToPort": 4004
-   },
-   "DependsOn": [
-    "APIGatewayTaskDefinitionTaskRole894A199F"
-   ]
-  }
- },
- "Outputs": {
-  "APIGatewayServiceLoadBalancerDNS7C7318A3": {
-   "Value": {
-    "Fn::GetAtt": [
-     "APIGatewayServiceLBDA2B7609",
-     "DNSName"
-    ]
+   ],
+   "Metadata": {
+    "aws:cdk:path": "localstack/APIGatewayService/SecurityGroup/Resource"
    }
   },
-  "APIGatewayServiceServiceURL95056890": {
-   "Value": {
-    "Fn::Join": [
-     "",
-     [
-      "http://",
+  "CDKMetadata": {
+   "Type": "AWS::CDK::Metadata",
+   "Properties": {
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/22S3W7CMAyFn2X3IQOm7R7a/TBNqKJot5MbTMloExS7IBT13ac0tCC0K59+PSdx7U7l9PlFTh7gRCO12Y8qXUifM6i9gBP9eFRT6b8PSiRb850lImuKSqu8KQxyYFe1sg3jGooKr/zKZkRWaWBtzWAO4nWRhbIEfgfGE5xF5vQRGK8HLwyjMzgYYieXpxkzqF2NhkWOqnGaz+/ONoeuh1vQCrch6VNgKIBwYYjBKBTxniGTzm9B785RudhMOu+TraCOUg0GSnTSxyuDMZY1uBL5psPBcP+mFS4M5PlJJlvzgVDxLtmh2gtUJH1SNcToQryXb+BKCKOlfYpbbXQ/2HtiDYM26G7YJZujO2oVlxVl+KJObDQpe0R3lv6yjdTQEmqkA8TEP7gVGmrpVzb+AF3NbKVVt7GoWlHZkqT/suUw8V63rVgh2caFoz7hCI/TiRzLyfjhl7QeucawrlGuYv0DIuSbu7gCAAA="
+   },
+   "Metadata": {
+    "aws:cdk:path": "localstack/CDKMetadata/Default"
+   },
+   "Condition": "CDKMetadataAvailable"
+  }
+ },
+ "Conditions": {
+  "CDKMetadataAvailable": {
+   "Fn::Or": [
+    {
+     "Fn::Or": [
       {
-       "Fn::GetAtt": [
-        "APIGatewayServiceLBDA2B7609",
-        "DNSName"
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "af-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-east-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-northeast-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-northeast-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-northeast-3"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-south-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-southeast-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-southeast-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-southeast-3"
        ]
       }
      ]
-    ]
-   }
+    },
+    {
+     "Fn::Or": [
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-southeast-4"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ca-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ca-west-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "cn-north-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "cn-northwest-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-central-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-north-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-south-2"
+       ]
+      }
+     ]
+    },
+    {
+     "Fn::Or": [
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-west-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-west-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-west-3"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "il-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "me-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "me-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "sa-east-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "us-east-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "us-east-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "us-west-1"
+       ]
+      }
+     ]
+    },
+    {
+     "Fn::Equals": [
+      {
+       "Ref": "AWS::Region"
+      },
+      "us-west-2"
+     ]
+    }
+   ]
   }
  }
 }
